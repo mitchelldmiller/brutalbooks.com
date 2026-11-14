@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brutal Books</title>
+  <meta name="description" content="Clear writing. Nothing wasted. Brutal Books publishes memoir and fiction by Mitchell D. Miller." />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #111111;
+      --off-white: #F2F0EB;
+      --red: #9B1C1C;
+      --mid: #555555;
+      --red-bright: #E05252;
+    }
+
+    html, body {
+      background: var(--black);
+      color: var(--off-white);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* -- Fonts -- */
+    @font-face {
+      font-display: swap;
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 700;
+      src: url('/fonts/roboto-slab-v36-latin-700.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Roboto Slab';
+      font-style: normal;
+      font-weight: 900;
+      src: url('/fonts/roboto-slab-v36-latin-900.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/fonts/inter-v20-latin-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      src: url('/fonts/inter-v20-latin-500.woff2') format('woff2');
+    }
+
+    /* ── Layout ── */
+    .page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 4rem 6rem;
+      max-width: 860px;
+    }
+
+    /* ── Stamp ── */
+.stamp {
+  display: inline-block;
+  border: 3px solid var(--red-bright);
+  color: var(--red-bright);
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 0.35em 0.75em;
+  margin-bottom: 2.4rem;
+  transform: rotate(-1.5deg);
+  user-select: none;
+}
+
+    /* ── Wordmark ── */
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 900;
+      font-size: clamp(3rem, 9vw, 6rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--off-white);
+      margin-bottom: 1.6rem;
+    }
+
+    h1 span {
+      color: var(--red);
+    }
+
+    /* ── Tagline ── */
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      font-weight: 400;
+      color: #AAAAAA;
+      max-width: 36ch;
+      line-height: 1.65;
+      margin-bottom: 3rem;
+    }
+
+    /* ── Divider ── */
+    .rule {
+      width: 48px;
+      height: 2px;
+      background: var(--red);
+      margin-bottom: 3rem;
+    }
+
+    /* ── Author link ── */
+    .author-line {
+      font-size: 0.95rem;
+      color: #888888;
+      letter-spacing: 0.02em;
+    }
+
+    .author-line a {
+      color: var(--off-white);
+      text-decoration: none;
+      border-bottom: 1px solid #555555;
+      padding-bottom: 1px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .author-line a:hover {
+      color: var(--red);
+      border-color: var(--red);
+    }
+
+    /* ── Footer ── */
+    footer {
+      padding: 1.5rem 6rem;
+      font-size: 0.75rem;
+      color: #444444;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .page { padding: 3rem 1.75rem; }
+      footer { padding: 1.25rem 1.75rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="page">
+    <div class="stamp">No Fluff</div>
+
+    <h1>Brutal<span>.</span><br>Books</h1>
+
+    <p class="tagline">Clear writing. Nothing wasted.</p>
+
+    <div class="rule"></div>
+
+    <p class="author-line">Books by <a href="https://mitchelldmiller.com/">Mitchell D. Miller</a></p>
+  </main>
+
+  <footer>
+    &copy; 2026 Brutal Books &nbsp;&middot;&nbsp; Pinellas Park, FL
+  </footer>
+
+</body>
+</html>
