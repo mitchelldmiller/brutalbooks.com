@@ -1,0 +1,13 @@
+name = "brutalbooks-com"
+compatibility_date = "2026-11-14"
+workers_dev = true
+
+[assets]
+directory = "."
+not_found_handling = "404-page"
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+persist = true
+
